@@ -11,3 +11,5 @@ SELECT p.firstName firstName, p.lastName lastName, a.city city, a.state state
 FROM Person p
 LEFT JOIN Address a
 ON p.personId = a.personId;
+
+/* Solution - just do a left or outer join, as the values are returned as NULL if there is no match, which fulfills the criteria */
