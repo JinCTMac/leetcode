@@ -16,6 +16,7 @@ Each row of this table indicates the ID of an employee, their name, salary, and 
 -- FROM Employee a, Employee b
 -- WHERE a.salary > b.salary
 -- AND a.managerId = b.id;
+
 SELECT a.name AS 'Employee'
 FROM Employee a
 JOIN Employee b
