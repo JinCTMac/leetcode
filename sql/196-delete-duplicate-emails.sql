@@ -30,7 +30,7 @@ WITH t1 AS (SELECT email, MIN(id) AS id_to_keep
 DELETE FROM Person
 WHERE id NOT IN (SELECT id_to_keep FROM t1);
 
-/* SOLUTION 2 - A much more intuitive solution:
+/* SOLUTION 2 - A much more intuitive solution (https://www.youtube.com/watch?v=7CBfTQbeMjU):
 To solve this question, you must first:
 1) Identify the smallest id for each email (using a group by)
 2) Delete all IDs not in this group of ids from the table
