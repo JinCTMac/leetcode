@@ -23,4 +23,4 @@ SELECT actor_id, director_id
 FROM t1
 WHERE collab_no >= 3;
 
-/* SOLUTION - you need to group a count by both actor_id and director_id together, so that the count is for the different pairings of actor_id and director_id, and we can look for counts that are 3 or greater. */
+/* SOLUTION - you need to group a count by both actor_id and director_id together, so that the count is for the different pairings of actor_id and director_id, and we can look for counts that are 3 or greater. View this for more explanation as to why group by with multiple parameters works (https://stackoverflow.com/questions/2421388/using-group-by-on-multiple-columns)*/
