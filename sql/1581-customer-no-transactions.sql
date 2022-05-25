@@ -1,0 +1,1 @@
+-- 1581 - Customers who visited but did not make transactions
