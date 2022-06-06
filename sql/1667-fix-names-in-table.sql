@@ -1,0 +1,1 @@
+-- 1667 - Fix names in a table
