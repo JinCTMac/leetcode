@@ -51,3 +51,17 @@ ORDER BY user_id;
 2) We then use LOWER and SUBSTRING to extractt the rest of the string past the first letter, using the LENGTH function to return the length of the string up to which we extract the string characters.
 
 3) Finally, we use the CONCAT function with the results of these two string functions as paramters, to join them into a new column name, and order the whole table by user_id. */
+
+/* URLS:
+
+https://www.w3resource.com/mysql/string-functions/mysql-concat-function.php
+
+https://www.w3schools.com/sql/func_mysql_length.asp
+
+https://www.w3schools.com/mysql/func_mysql_left.asp
+
+https://www.w3schools.com/mysql/func_mysql_lower.asp
+
+https://www.w3schools.com/sql/func_mysql_upper.asp
+
+*/
