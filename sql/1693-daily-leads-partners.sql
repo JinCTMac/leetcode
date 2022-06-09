@@ -1,0 +1,1 @@
+-- 1693 - Daily leads and partners
