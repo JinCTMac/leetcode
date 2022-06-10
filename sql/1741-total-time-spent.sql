@@ -1,0 +1,1 @@
+-- 1741 - Find total time spent by each employee
