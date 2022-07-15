@@ -100,4 +100,8 @@ FROM Users u
 LEFT JOIN t1
 ON u.user_id = t1.buyer_id;
 
-/* SOLUTION - we only care about the
+/* SOLUTION - we only care about two tables here, Users and Orders, as they are what we need to provide the user_id, join_date and number of orders in 2019.
+
+1) Firstly, we want to get the number of orders in 2019, which we can obtain just from the Orders table alone. We can group by buyer_id and count the number of orders each buyer_id makes, as this corresponds to the user_id and hence the orders made by each user_id. We provide a WHERE condition to filter only for orders made in 2019, and make this subquery into a CTE.
+
+2) Then, we can select the user_id and join_date from the Users table, and then left join the CTE on the user_id to get all of the user_ids in the table. This returns each user_id, their join date and all the orders they made in 2019, but if they made no orders in 2019 their order number will be NULL. To avoid this, we use the COALESCE function to replace all of those NULL values with 0. */
